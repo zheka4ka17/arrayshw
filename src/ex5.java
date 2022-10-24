@@ -29,11 +29,11 @@ findDuplicateValues();
         int count=0;
         for (int i = 0; i < size - 1; i++){
             for (int j = i + 1; j < size; j++)
-                if (arr[i] == arr[j]){
+                if (arr[i] == arr[j] && arr[j]!=20){
                     count++;
                     arr[j]=x;}
 
-                    if (count>0 && arr[i]!=x){
+                    if (count>0) {
                     System.out.printf("Duplicate items : %d", arr[i]);
                     System.out.println();
 
