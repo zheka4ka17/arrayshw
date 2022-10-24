@@ -29,7 +29,7 @@ findDuplicateValues();
         int count=0;
         for (int i = 0; i < size - 1; i++){
             for (int j = i + 1; j < size; j++)
-                if (arr[i] == arr[j] && arr[j]!=20){
+                if (arr[i] == arr[j] && arr[i]!=20){
                     count++;
                     arr[j]=x;}
 
