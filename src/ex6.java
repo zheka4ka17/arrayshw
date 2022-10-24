@@ -9,14 +9,14 @@ which they are in the array, to the console.*/
     static int[] arr = new int[size];
 
     public static void main(String[] args) {
-        fillOrder();
+        fillRandom();
         print();
         uniqueElements();
 
 
     }
 
-    static void fillOrder() {
+    static void fillRandom() {
         Random random = new Random();
         for (int i = 0; i < size; i++)
             arr[i] = random.nextInt(20) - 10;

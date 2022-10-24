@@ -10,12 +10,12 @@ initialized at the beginning of the program  */
     static int[] arr = new int[size];
 
     public static void main(String[] args) {
-fillOrder();
+fillRandom();
 print();
 exam();
     }
 
-    static void fillOrder() {
+    static void fillRandom() {
         Random random = new Random();
         for (int i = 0; i < size; i++)
             arr[i] = random.nextInt(2);//проверял на маленьком диапазоне , на большом тоже должно работать
