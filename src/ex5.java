@@ -16,7 +16,7 @@ findDuplicateValues();
     static void fillRandom() {
         Random random = new Random();
         for (int i = 0; i < size; i++)
-            arr[i] = random.nextInt(20) - 10;
+            arr[i] = random.nextInt(21) - 10;
     }
     static void print(){
         for(int i=0; i<size; i++)
@@ -29,15 +29,17 @@ findDuplicateValues();
         int count=0;
         for (int i = 0; i < size - 1; i++){
             for (int j = i + 1; j < size; j++)
-                if (arr[i] == arr[j])
+                if (arr[i] == arr[j]){
                     count++;
-            if (count>0 && arr[i]!=x){
+                    arr[j]=x;}
+
+                    if (count>0 && arr[i]!=x){
                     System.out.printf("Duplicate items : %d", arr[i]);
                     System.out.println();
 
                     System.out.printf("The number of duplicate values :%d", count);
                     System.out.println();
-                    x=arr[i];
+
             }
             count=0;
         }
